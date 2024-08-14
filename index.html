@@ -90,215 +90,240 @@
         .survey-item .deleteDataBtn:hover {
             background-color: #c82333;
         }
+        .color-picker-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .color-picker-container label {
+            margin-right: 10px;
+        }
+        .color-picker-container input[type="color"] {
+            border: none;
+            width: 50px;
+            height: 30px;
+            padding: 0;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Anket Formu</h1>
-    <form id="surveyForm">
-        <!-- Form alanları burada -->
-        <div class="form-group">
-            <label for="name">İsim:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">E-posta:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="age">Yaş:</label>
-            <input type="number" id="age" name="age" required>
-        </div>
-        <div class="form-group">
-            <label for="gender">Cinsiyet:</label>
-            <select id="gender" name="gender">
-                <option value="male">Erkek</option>
-                <option value="female">Kadın</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="question1">Soru 1: En sevdiğiniz renk nedir?</label>
-            <select id="question1" name="question1">
-                <option value="A">A) Kırmızı</option>
-                <option value="B">B) Mavi</option>
-                <option value="C">C) Yeşil</option>
-                <option value="D">D) Sarı</option>
-                <option value="E">E) Diğer</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="question2">Soru 2: Hangi mevsimi daha çok seversiniz?</label>
-            <select id="question2" name="question2">
-                <option value="A">A) İlkbahar</option>
-                <option value="B">B) Yaz</option>
-                <option value="C">C) Sonbahar</option>
-                <option value="D">D) Kış</option>
-                <option value="E">E) Fark etmez</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="question3">Soru 3: En çok hangi içeceği tercih edersiniz?</label>
-            <div class="radio-group" id="question3">
-                <label><input type="radio" name="question3" value="A"> A) Kahve</label>
-                <label><input type="radio" name="question3" value="B"> B) Çay</label>
-                <label><input type="radio" name="question3" value="C"> C) Su</label>
-                <label><input type="radio" name="question3" value="D"> D) Meyve Suyu</label>
-                <label><input type="radio" name="question3" value="E"> E) Gazlı İçecekler</label>
+    <div class="container">
+        <h1>Anket Formu</h1>
+        <form id="surveyForm">
+            <!-- Form alanları burada -->
+            <div class="form-group">
+                <label for="name">İsim:</label>
+                <input type="text" id="name" name="name" required>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="feedback">Görüşleriniz:</label>
-            <textarea id="feedback" name="feedback" rows="4" required></textarea>
-        </div>
-        <div class="form-group">
-            <button type="submit">Gönder</button>
-        </div>
-    </form>
-</div>
+            <div class="form-group">
+                <label for="email">E-posta:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Yaş:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Cinsiyet:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question1">Soru 1: En sevdiğiniz renk nedir?</label>
+                <select id="question1" name="question1">
+                    <option value="A">A) Kırmızı</option>
+                    <option value="B">B) Mavi</option>
+                    <option value="C">C) Yeşil</option>
+                    <option value="D">D) Sarı</option>
+                    <option value="E">E) Diğer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question2">Soru 2: Hangi mevsimi daha çok seversiniz?</label>
+                <select id="question2" name="question2">
+                    <option value="A">A) İlkbahar</option>
+                    <option value="B">B) Yaz</option>
+                    <option value="C">C) Sonbahar</option>
+                    <option value="D">D) Kış</option>
+                    <option value="E">E) Fark etmez</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question3">Soru 3: En çok hangi içeceği tercih edersiniz?</label>
+                <div class="radio-group" id="question3">
+                    <label><input type="radio" name="question3" value="A"> A) Kahve</label>
+                    <label><input type="radio" name="question3" value="B"> B) Çay</label>
+                    <label><input type="radio" name="question3" value="C"> C) Su</label>
+                    <label><input type="radio" name="question3" value="D"> D) Meyve Suyu</label>
+                    <label><input type="radio" name="question3" value="E"> E) Gazlı İçecekler</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Görüşleriniz:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Gönder</button>
+            </div>
+        </form>
+    </div>
 
-<div class="container">
-    <button id="readDataBtn">Verileri Oku</button>
-    <div id="surveyList"></div>
-</div>
+    <div class="color-picker-container">
+        <label for="bgColor">Arka Plan Rengi:</label>
+        <input type="color" id="bgColor" name="bgColor" value="#f4f4f4">
+    </div>
 
-<script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
-    import { getDatabase, ref, set, onValue, update, remove } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js";
+    <div class="container">
+        <button id="readDataBtn">Verileri Oku</button>
+        <div id="surveyList"></div>
+    </div>
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyBVUC9rdnhIJUiMSEd-ARAdXee5pFl_LY0",
-        authDomain: "testing-230d1.firebaseapp.com",
-        databaseURL: "https://testing-230d1-default-rtdb.europe-west1.firebasedatabase.app",
-        projectId: "testing-230d1",
-        storageBucket: "testing-230d1.appspot.com",
-        messagingSenderId: "48813475927",
-        appId: "1:48813475927:web:ba21cd4779e18c8c1c7b12",
-        measurementId: "G-7XG4T0SHMY"
-    };
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+        import { getDatabase, ref, set, onValue, update, remove } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-database.js";
 
-    const app = initializeApp(firebaseConfig);
-    const database = getDatabase(app);
+        const firebaseConfig = {
+            apiKey: "AIzaSyBVUC9rdnhIJUiMSEd-ARAdXee5pFl_LY0",
+            authDomain: "testing-230d1.firebaseapp.com",
+            databaseURL: "https://testing-230d1-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "testing-230d1",
+            storageBucket: "testing-230d1.appspot.com",
+            messagingSenderId: "48813475927",
+            appId: "1:48813475927:web:ba21cd4779e18c8c1c7b12",
+            measurementId: "G-7XG4T0SHMY"
+        };
 
-    let isUpdating = false;
-    let currentKey = null;
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
 
-    document.getElementById('surveyForm').onsubmit = function(event) {
-        event.preventDefault();
+        let isUpdating = false;
+        let currentKey = null;
 
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const age = document.getElementById('age').value;
-        const gender = document.getElementById('gender').value;
-        const question1 = document.getElementById('question1').value;
-        const question2 = document.getElementById('question2').value;
-        const question3 = document.querySelector('input[name="question3"]:checked').value;
-        const feedback = document.getElementById('feedback').value;
+        document.getElementById('surveyForm').onsubmit = function(event) {
+            event.preventDefault();
 
-        if (isUpdating && currentKey) {
-            const updatedSurveyRef = ref(database, 'surveys/' + currentKey);
-            update(updatedSurveyRef, {
-                name: name,
-                email: email,
-                age: age,
-                gender: gender,
-                question1: question1,
-                question2: question2,
-                question3: question3,
-                feedback: feedback
-            })
-            .then(() => {
-                alert('Veri başarıyla güncellendi!');
-                document.getElementById('surveyForm').reset();
-                isUpdating = false;
-                currentKey = null;
-            })
-            .catch((error) => {
-                alert('Veri güncellenirken bir hata oluştu: ' + error.message);
-            });
-        } else {
-            const newSurveyRef = ref(database, 'surveys/' + Date.now());
-            set(newSurveyRef, {
-                name: name,
-                email: email,
-                age: age,
-                gender: gender,
-                question1: question1,
-                question2: question2,
-                question3: question3,
-                feedback: feedback
-            })
-            .then(() => {
-                alert('Anket başarıyla gönderildi!');
-                document.getElementById('surveyForm').reset();
-            })
-            .catch((error) => {
-                alert('Anket gönderilirken bir hata oluştu: ' + error.message);
-            });
-        }
-    };
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const age = document.getElementById('age').value;
+            const gender = document.getElementById('gender').value;
+            const question1 = document.getElementById('question1').value;
+            const question2 = document.getElementById('question2').value;
+            const question3 = document.querySelector('input[name="question3"]:checked').value;
+            const feedback = document.getElementById('feedback').value;
 
-    document.getElementById('readDataBtn').addEventListener('click', function() {
-        const surveyListRef = ref(database, 'surveys');
-        onValue(surveyListRef, (snapshot) => {
-            const data = snapshot.val();
-            const surveyList = document.getElementById('surveyList');
-            surveyList.innerHTML = '';
-
-            for (const key in data) {
-                const surveyItem = document.createElement('div');
-                surveyItem.className = 'survey-item';
-                surveyItem.dataset.key = key;
-                surveyItem.innerHTML = `
-                    <p><strong>İsim:</strong> ${data[key].name}</p>
-                    <p><strong>E-posta:</strong> ${data[key].email}</p>
-                    <p><strong>Yaş:</strong> ${data[key].age}</p>
-                    <p><strong>Cinsiyet:</strong> ${data[key].gender}</p>
-                    <p><strong>Soru 1:</strong> ${data[key].question1}</p>
-                    <p><strong>Soru 2:</strong> ${data[key].question2}</p>
-                    <p><strong>Soru 3:</strong> ${data[key].question3}</p>
-                    <p><strong>Görüşler:</strong> ${data[key].feedback}</p>
-                    <button class="updateDataBtn">Güncelle</button>
-                    <button class="deleteDataBtn">Sil</button>
-                `;
-                surveyList.appendChild(surveyItem);
-
-                surveyItem.querySelector('.updateDataBtn').addEventListener('click', function() {
-                    const surveyData = data[key];
-                    currentKey = key;
-
-                    document.getElementById('name').value = surveyData.name;
-                    document.getElementById('email').value = surveyData.email;
-                    document.getElementById('age').value = surveyData.age;
-                    document.getElementById('gender').value = surveyData.gender;
-                    document.getElementById('question1').value = surveyData.question1;
-                    document.getElementById('question2').value = surveyData.question2;
-
-                    const selectedRadio = document.querySelector(`input[name="question3"][value="${surveyData.question3}"]`);
-                    if (selectedRadio) {
-                        selectedRadio.checked = true;
-                    }
-
-                    document.getElementById('feedback').value = surveyData.feedback;
-
-                    isUpdating = true;
+            if (isUpdating && currentKey) {
+                const updatedSurveyRef = ref(database, 'surveys/' + currentKey);
+                update(updatedSurveyRef, {
+                    name: name,
+                    email: email,
+                    age: age,
+                    gender: gender,
+                    question1: question1,
+                    question2: question2,
+                    question3: question3,
+                    feedback: feedback
+                })
+                .then(() => {
+                    alert('Veri başarıyla güncellendi!');
+                    document.getElementById('surveyForm').reset();
+                    isUpdating = false;
+                    currentKey = null;
+                })
+                .catch((error) => {
+                    alert('Veri güncellenirken bir hata oluştu: ' + error.message);
                 });
-
-                surveyItem.querySelector('.deleteDataBtn').addEventListener('click', function() {
-                    const surveyRef = ref(database, 'surveys/' + key);
-                    remove(surveyRef)
-                        .then(() => {
-                            alert('Veri başarıyla silindi!');
-                            surveyItem.remove();
-                        })
-                        .catch((error) => {
-                            alert('Veri silinirken bir hata oluştu: ' + error.message);
-                        });
+            } else {
+                const newSurveyRef = ref(database, 'surveys/' + Date.now());
+                set(newSurveyRef, {
+                    name: name,
+                    email: email,
+                    age: age,
+                    gender: gender,
+                    question1: question1,
+                    question2: question2,
+                    question3: question3,
+                    feedback: feedback
+                })
+                .then(() => {
+                    alert('Anket başarıyla gönderildi!');
+                    document.getElementById('surveyForm').reset();
+                })
+                .catch((error) => {
+                    alert('Anket gönderilirken bir hata oluştu: ' + error.message);
                 });
             }
+        };
+
+        document.getElementById('readDataBtn').addEventListener('click', function() {
+            const surveyListRef = ref(database, 'surveys');
+            onValue(surveyListRef, (snapshot) => {
+                const data = snapshot.val();
+                const surveyList = document.getElementById('surveyList');
+                surveyList.innerHTML = '';
+
+                for (const key in data) {
+                    const surveyItem = document.createElement('div');
+                    surveyItem.className = 'survey-item';
+                    surveyItem.dataset.key = key;
+                    surveyItem.innerHTML = `
+                        <p><strong>İsim:</strong> ${data[key].name}</p>
+                        <p><strong>E-posta:</strong> ${data[key].email}</p>
+                        <p><strong>Yaş:</strong> ${data[key].age}</p>
+                        <p><strong>Cinsiyet:</strong> ${data[key].gender}</p>
+                        <p><strong>Soru 1:</strong> ${data[key].question1}</p>
+                        <p><strong>Soru 2:</strong> ${data[key].question2}</p>
+                        <p><strong>Soru 3:</strong> ${data[key].question3}</p>
+                        <p><strong>Görüşler:</strong> ${data[key].feedback}</p>
+                        <button class="updateDataBtn">Güncelle</button>
+                        <button class="deleteDataBtn">Sil</button>
+                    `;
+                    surveyList.appendChild(surveyItem);
+
+                    surveyItem.querySelector('.updateDataBtn').addEventListener('click', function() {
+                        const surveyData = data[key];
+                        currentKey = key;
+
+                        document.getElementById('name').value = surveyData.name;
+                        document.getElementById('email').value = surveyData.email;
+                        document.getElementById('age').value = surveyData.age;
+                        document.getElementById('gender').value = surveyData.gender;
+                        document.getElementById('question1').value = surveyData.question1;
+                        document.getElementById('question2').value = surveyData.question2;
+
+                        const selectedRadio = document.querySelector(`input[name="question3"][value="${surveyData.question3}"]`);
+                        if (selectedRadio) {
+                            selectedRadio.checked = true;
+                        }
+
+                        document.getElementById('feedback').value = surveyData.feedback;
+
+                        isUpdating = true;
+                    });
+
+                    surveyItem.querySelector('.deleteDataBtn').addEventListener('click', function() {
+                        const surveyRef = ref(database, 'surveys/' + key);
+                        remove(surveyRef)
+                            .then(() => {
+                                alert('Veri başarıyla silindi!');
+                                surveyItem.remove();
+                            })
+                            .catch((error) => {
+                                alert('Veri silinirken bir hata oluştu: ' + error.message);
+                            });
+                    });
+                }
+            });
         });
-    });
-</script>
+
+        // Arka plan rengini ayarlama
+        const bgColorPicker = document.getElementById('bgColor');
+        bgColorPicker.addEventListener('input', function() {
+            document.body.style.backgroundColor = bgColorPicker.value;
+        });
+    </script>
 
 </body>
 </html>
